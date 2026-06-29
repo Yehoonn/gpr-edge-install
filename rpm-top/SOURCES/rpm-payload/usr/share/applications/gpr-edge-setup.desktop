@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=GPR Edge 설정
-Comment=GPR Edge 네트워크·장비 설정
-Exec=pkexec /usr/bin/gpr-edge-setup
-Terminal=false
-Type=Application
-Categories=Utility;Settings;
-StartupNotify=true
