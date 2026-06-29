@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GPR Edge
+Comment=GPR Edge 서버
+Exec=/opt/gpr-edge/scripts/gpr-edge-launcher.sh
+Path=/opt/gpr-edge
+Terminal=true
+Type=Application
+Categories=Utility;Network;
+StartupNotify=true

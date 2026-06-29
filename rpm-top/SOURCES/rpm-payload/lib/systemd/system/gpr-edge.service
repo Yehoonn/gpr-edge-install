@@ -1,0 +1,17 @@
+[Unit]
+Description=GPR Edge Program
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/gpr-edge
+Environment=GPR_EDGE_RUNTIME_DIR=/var/lib/gpr-edge
+ExecStart=/opt/gpr-edge/gpr-edge --config /opt/gpr-edge/config.yaml
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
